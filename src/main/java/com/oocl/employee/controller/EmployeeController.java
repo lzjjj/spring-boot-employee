@@ -31,9 +31,16 @@ public class EmployeeController {
     public List <Employee> deleteEmployee(@PathVariable Integer id) {
         return employeeService.DeleteEmployee( id );
     }
+
     @PutMapping("/Employees/{id}")
     @ResponseBody
-    public List<Employee> updateEmployee(@RequestBody Employee employee,@PathVariable Integer id){
-        return employeeService.UpdateEmployee(id,employee);
+    public List <Employee> updateEmployee(@RequestBody Employee employee, @PathVariable Integer id) {
+        return employeeService.UpdateEmployee( id, employee );
+    }
+
+    @GetMapping("/Employees/{id}")
+    @ResponseBody
+    public Employee FindEmployee(@PathVariable Integer id) {
+        return employeeService.FindEmployee( id );
     }
 }
