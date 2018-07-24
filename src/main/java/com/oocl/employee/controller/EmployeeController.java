@@ -13,14 +13,22 @@ import java.util.List;
 public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
+
     @GetMapping("/Employees")
     @ResponseBody
-    public List<Employee> FindAllEmployee(){
+    public List <Employee> FindAllEmployee() {
         return employeeService.FindAllEmployee();
     }
+
     @PostMapping("/Employees")
     @ResponseBody
-    public List<Employee> addEmployee(@RequestBody Employee employee){
-        return employeeService.AddEmployee(employee);
+    public List <Employee> addEmployee(@RequestBody Employee employee) {
+        return employeeService.AddEmployee( employee );
+    }
+
+    @DeleteMapping("/Employees/{id}")
+    @ResponseBody
+    public List <Employee> deleteEmployee(@PathVariable Integer id) {
+        return employeeService.DeleteEmployee( id );
     }
 }
