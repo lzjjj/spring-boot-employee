@@ -18,5 +18,9 @@ public class EmployeeController {
     public List<Employee> FindAllEmployee(){
         return employeeService.FindAllEmployee();
     }
-
+    @PostMapping("/Employees")
+    @ResponseBody
+    public List<Employee> addEmployee(@RequestBody Employee employee){
+        return employeeService.AddEmployee(employee);
+    }
 }
