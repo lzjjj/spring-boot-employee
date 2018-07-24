@@ -17,14 +17,14 @@ public class EmployeeApplication {
 	}
     public static List<Employee> allEmployee( ){
         List<Employee> employeeList = new ArrayList <>(  );
-        employeeList.add(new Employee( 1,30,5000,"男" )  );
-        employeeList.add(new Employee( 2,50,5000,"男" )  );
-        employeeList.add(new Employee( 3,40,5000,"男" )  );
-        employeeList.add(new Employee( 4,30,5000,"男" )  );
-        employeeList.add(new Employee( 5,60,5000,"男" )  );
-        employeeList.add(new Employee( 6,80,5000,"男" )  );
-        employeeList.add(new Employee( 7,20,5000,"男" )  );
-        employeeList.add(new Employee( 8,308,5000,"男" )  );
+        employeeList.add(new Employee( 1,30,5000,"男","TEST")  );
+        employeeList.add(new Employee( 2,50,5000,"男" ,"TEST")  );
+        employeeList.add(new Employee( 3,40,5000,"男" ,"TEST")  );
+        employeeList.add(new Employee( 4,30,5000,"男" ,"TEST")  );
+        employeeList.add(new Employee( 5,60,5000,"男" ,"TEST")  );
+        employeeList.add(new Employee( 6,80,5000,"男" ,"TEST")  );
+        employeeList.add(new Employee( 7,20,5000,"男" ,"TEST")  );
+        employeeList.add(new Employee( 8,308,5000,"男" ,"TEST")  );
         return employeeList;
     }
 }

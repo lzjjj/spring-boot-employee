@@ -5,6 +5,15 @@ public class Employee {
     private int age;
     private int salary;
     private String sex;
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getId() {
         return id;
@@ -38,11 +47,12 @@ public class Employee {
         this.sex = sex;
     }
 
-    public Employee(int id, int age, int salary, String sex) {
+    public Employee(int id, int age, int salary, String sex,String name) {
         this.id = id;
         this.age = age;
         this.salary = salary;
         this.sex = sex;
+        this.name = name;
     }
     public Employee() {
 

@@ -34,6 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 i.setAge(employee.getAge()  );
                 i.setSalary(employee.getSalary()  );
                 i.setSex(employee.getSex()  );
+                i.setName(employee.getName()  );
             }
         }
         return  employeeList;
